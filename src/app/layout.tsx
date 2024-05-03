@@ -9,7 +9,10 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'devstore',
+  title: {
+    template: 'devstore | %s',
+    default: 'devstore',
+  },
 }
 
 export default function RootLayout({
